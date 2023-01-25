@@ -2,13 +2,12 @@
 pragma solidity ^0.8.17;
 
 contract InternetToken {
-
     string public name = "Internet Token";
     string public symbol = "ITK";
     uint public totalSupply = 1000000;
     address public owner;
 
-    mapping (address => uint) balances;
+    mapping(address => uint) balances;
 
     event Transfer(address indexed _from, address indexed _to, uint _amount);
 
